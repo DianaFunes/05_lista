@@ -1,0 +1,87 @@
+h1{
+    color: #b73cef;
+    background-color: #f5bcff;
+    text-align: center;
+}
+.section {
+    background-color: #eb95d0;
+ 
+}
+
+label input[type="text"]{
+    height:28px;
+    width:120px;
+    border: solid 1px #fff;
+    text-align:center;
+    color:#d3bcfd;
+    border-radius:10px;
+    display:block;
+}
+
+li input[type="text"]{
+    height:28px;
+    width:40px;
+    border: solid 1px #fff;
+    text-align:center;
+    color:#b73cef;
+    border-radius:10px;
+}
+
+.barra{
+    background-color: #ddd;
+    text-align:center;
+    height: 20px;
+    width: 500px;
+    margin-left: 500px;
+  }
+  .color {
+    background-color: #0077ff;
+    height: 100%;
+    color: white;
+    text-align: center;
+    transition: width 0.5s;
+  }
+  .botones {
+    margin: 20px;
+    margin-left: 650px;
+  }
+  button{
+    width: 100px;
+    height: auto;
+    background-color: #b73cef;
+    color: #fff;
+    font-size: large;
+  }
+  .numero {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .lista li {
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  .lista li.completed {
+    text-decoration: line-through;
+    color: #000000;
+  }
+  .tareasCompletas {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  #nueva{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    text-align: center;
+  }

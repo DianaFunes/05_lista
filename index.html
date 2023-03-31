@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Encuesta</title>
+</head>
+<body>
+    <header>
+        <h1>Lista de tareas</h1>
+    </header>
+<section id="seccion">
+
+    <section class="barra">
+        <section class="color" :style="{ width: color + '%' }">
+            {{ color }}%
+        </section>
+    </section>
+    <div class="numero">
+        {{ color }}
+      </div>
+    <section class="botones">
+        <button @click="mas">+</button>
+        <button @click="menos">-</button>
+    </section>
+<section id="nueva">
+    <form @submit.prevent="agregar">
+      <input type="text" v-model="nuevaTarea">
+      <button type="submit">Agregar</button>
+    </form>
+ 
+
+    <section>
+    <ul class="lista">
+        <li v-for="(tarea, index) in tareas" :key="index" @click="listaTareas(index)" :class="{ completed: tarea.completed }">
+          {{ tarea.text }}
+        </li>
+      </ul>
+    </section>
+      <section class="tareasCompletas">
+        Tareas completas: {{ tareasCompletas }}
+      </section>
+    </section>
+</section>
+
+    <script src="js/vue.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
